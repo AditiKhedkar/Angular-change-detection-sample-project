@@ -3,11 +3,11 @@
 
 This mini project demonstrates Angular's change detection mechanisms through two child components:
 
-## 🔍 Features
+##  Features
 - `DefaultChildComponent` uses Angular's default change detection.
 - `OnPushChildComponent` uses `ChangeDetectionStrategy.OnPush` for performance optimization.
 
-## 🧪 How to Use
+##  How to Use
 
 1. Run the app.
 2. Click on:
@@ -15,7 +15,7 @@ This mini project demonstrates Angular's change detection mechanisms through two
    - `Mutate Object`: Only the default component updates.
    - `Replace Object`: Both components update (new reference triggers OnPush).
 
-## 📁 Components
+##  Components
 
 - `AppComponent`: Contains buttons and data.
 - `DefaultChildComponent`: Logs every detection cycle.
@@ -28,11 +28,10 @@ npm install
 ng serve
 ```
 
-## 📚 Learnings
+##  Learnings
 
 - `Default` strategy checks on every change.
 - `OnPush` requires **immutable changes** to inputs.
 - Optimize with `ChangeDetectorRef.markForCheck()` if needed.
 
 ---
-Happy Learning 🎓
