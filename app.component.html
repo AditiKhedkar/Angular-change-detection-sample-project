@@ -1,0 +1,9 @@
+
+<h1>{{ title }}</h1>
+<button (click)="increment()">Increment Parent</button>
+<button (click)="mutateObject()">Mutate Object</button>
+<button (click)="replaceObject()">Replace Object</button>
+<hr />
+
+<app-default-child [counter]="parentCounter" [data]="data"></app-default-child>
+<app-on-push-child [counter]="parentCounter" [data]="data"></app-on-push-child>
